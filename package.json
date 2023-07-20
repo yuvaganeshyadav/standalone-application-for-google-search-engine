@@ -1,0 +1,38 @@
+{
+  "name": "helloworldapp",
+  "version": "0.1.1",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "build": "electron-builder",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "devDependencies": {
+    "electron": "^1.8.8",
+    "electron-builder": "^24.4.0",
+    "electron-package": "^0.1.0",
+    "electron-packager": "^8.0.0"
+  },
+  "dependencies": {
+    "builder": "^5.0.0",
+    "electron-updator": "^1.0.1"
+  },
+  "description": "A simple Hello world application using ElectronJS. Download and install node.js by going through this link https://nodejs.org/en/download/.",
+  "author": "",
+  "license": "ISC",
+  "build": {
+    "appId": "com.example.myapp",
+    "directories": {
+      "output": "dist"
+    },
+    "win": {
+      "target": "NSIS"
+    },
+    "mac": {
+      "target": "dmg"
+    },
+    "linux": {
+      "target": "AppImage"
+    }
+  }
+}
